@@ -1,3 +1,10 @@
+"""
+SmartCollectionInfo handles SQLite storage for Milvus collection metadata, 
+where each collection represents a knowledge base. It ensures the use of 
+consistent vector encoding algorithms for sentence embedding within a 
+knowledge base.
+"""
+
 import sqlite3
 from datetime import datetime
 

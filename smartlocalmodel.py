@@ -1,3 +1,10 @@
+"""
+SmartLocalModel is a streamlined local model for text processing, combining 
+multilingual embeddings and question answering capabilities. It uses 
+SentenceTransformer for embeddings and a Deberta model for answering, 
+optimized for concise and contextually relevant responses within a token budget.
+"""
+
 from sentence_transformers import SentenceTransformer, util
 from transformers import pipeline
 

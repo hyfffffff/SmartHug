@@ -1,3 +1,13 @@
+"""
+The `modelfactory` function serves as a centralized factory method to 
+initialize and return instances of various text processing and question 
+answering models based on a provided model ID. It supports a range of models 
+including GPT-based, Baidu's Erniebot integration, local models with 
+multilingual support, cloud-based GLM, local GLM, and XVERSE models, 
+allowing for flexible selection depending on the application's needs.
+"""
+
+
 from smartgptmodel import SmartGptModel
 from smartbaidumodel import SmartBaiduModel
 from smartlocalmodel import SmartLocalModel

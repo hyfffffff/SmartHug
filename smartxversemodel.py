@@ -1,3 +1,10 @@
+"""
+SmartXVerseModel is a sophisticated model integrating SentenceTransformer 
+for embeddings and the XVERSE 13B model for chat-based responses. It 
+optimizes for contextually aware answers, leveraging advanced configurations 
+for efficient, large-scale language model generation within a token budget.
+"""
+
 from sentence_transformers import SentenceTransformer
 from transformers import AutoTokenizer, AutoModelForCausalLM
 from transformers.generation.utils import GenerationConfig

@@ -1,3 +1,12 @@
+"""
+SmartGlmModel is a class designed to integrate with ZhipuAI's API for text
+embedding and answering questions. It uses cloud-based GLM models for
+processing and is configured with an API key from the environment. This model
+focuses on providing concise answers based on the provided text chunks within
+a predefined token budget.
+"""
+
+
 from zhipuai import ZhipuAI
 import os # for getting API token from env variable OPENAI_API_KEY
 

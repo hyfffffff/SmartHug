@@ -1,3 +1,11 @@
+"""
+PDFSplitor is a class for extracting and segmenting text from PDF files. It
+verifies the validity of the PDF and provides functionality to break down the
+text into chunks, taking into account page numbers and optional overlap for
+each segment.
+"""
+
+
 import fitz  # PyMuPDF
 
 class PDFSplitor:

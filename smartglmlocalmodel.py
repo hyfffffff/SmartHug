@@ -1,3 +1,10 @@
+"""
+SmartGlmLocalModel utilizes SentenceTransformer for embedding and a local 
+GLM model for answering queries. It incorporates a multilingual embedding 
+model and the ChatGLM3-6B model for generating responses based on text 
+chunks within a token budget.
+"""
+
 from sentence_transformers import SentenceTransformer
 from transformers import AutoTokenizer, AutoModel
 

@@ -1,3 +1,10 @@
+"""
+PDFInfoDB manages records of articles within a knowledge base, with each
+article represented by a record. It emphasizes tracking article information
+like file name, chunk count, chunk size, and overlap for sentence vector
+encoding in the knowledge base.
+"""
+
 import sqlite3
 from datetime import datetime
 import pandas as pd

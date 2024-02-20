@@ -1,3 +1,10 @@
+"""
+SmartGptModel integrates with the OpenAI API to perform text embedding and 
+generate answers using GPT 3.5 Turbo. It leverages an API key for 
+authentication, embedding dimensions for text processing, and manages 
+responses within a specified token budget.
+"""
+
 from openai import OpenAI # for calling the OpenAI API
 import os # for getting API token from env variable OPENAI_API_KEY
 

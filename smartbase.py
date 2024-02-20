@@ -1,3 +1,21 @@
+"""
+SmartBase: Core component of the application, handling text data management 
+and retrieval using Milvus vector database. It connects to Milvus, creates 
+collections with schemas for text and embedding storage, processes PDFs into 
+searchable chunks, and performs vectorized searches.
+
+Features include:
+- Connection setup to a Milvus database.
+- Model management for text encoding and query answering.
+- Collection creation/check in Milvus with text, page, file name, and embeddings.
+- PDF text extraction, chunking, encoding, and storage in Milvus.
+- Overwriting, deletion, and existence checks for collection data.
+- Vectorized search within collections for query handling.
+- Integration with an answer model for query responses.
+- Utilities for listing records and data presentation in pandas DataFrame.
+
+"""
+
 from pymilvus import connections, Collection, FieldSchema, CollectionSchema, DataType, utility
 # from sentence_transformers import SentenceTransformer
 from smartgptmodel import SmartGptModel

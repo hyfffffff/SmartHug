@@ -1,3 +1,11 @@
+"""
+SmartBaiduModel is a class that integrates with Baidu's Erniebot for text 
+embedding and answering queries. It utilizes specified API tokens for 
+authentication and is designed to answer questions based on given text 
+chunks, with a token budget to manage response length.
+"""
+
+
 import erniebot
 import tiktoken  # for counting tokens
 import os

@@ -1,3 +1,18 @@
+"""
+This program is designed to create a knowledge base from PDF documents using Gradio for a user-friendly interface. 
+
+Functionality includes:
+- Loading environment variables to configure models and settings such as answer model ID, encode model ID, knowledge base collection, chunk length, and overlap length.
+- Initializing models for encoding and answering questions based on IDs fetched from environment variables.
+- Uploading PDF files.
+- Encoding uploaded PDFs into chunks, generating sentence vectors for each chunk, and adding them to a SmartBase instance to form a knowledge base.
+- Allowing users to ask questions against the entire knowledge base or specific documents, selecting different models for answering, and managing document references.
+- Providing a Gradio web interface to upload PDF files, configure settings, ask questions, and view answers along with references to the source documents.
+
+The Gradio web interface includes tabs for uploading documents and asking questions, with advanced options for document processing and model selection. Users can see updates in the knowledge base in real-time, choose from pre-defined models for answering questions, and view original document snippets as image references for answers provided.
+"""
+
+
 import gradio as gr
 import os
 from pathlib import Path

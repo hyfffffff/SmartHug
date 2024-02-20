@@ -142,8 +142,8 @@ The Gradio interface is divided into two main tabs for ease of use:
 ![image](https://github.com/hyfffffff/SmartHug/assets/108557638/92212a4e-f005-497c-b326-9c9788000e9b)
 
 2. **Knowledge Base Query and Answer**: This section enables users to ask questions and receive answers based on the knowledge base. The right side of the screen displays related text from the knowledge base, and users can view the original documents by clicking on "Original Document."
-![image](https://github.com/hyfffffff/SmartHug/assets/108557638/bb131ca3-0611-4644-9279-25a3c1526123)
-![image](https://github.com/hyfffffff/SmartHug/assets/108557638/3dc5de7c-23e9-4654-9c4b-abc109fd3ad4)
+![picture1](https://github.com/hyfffffff/SmartHug/assets/108557638/6bd5a52a-9597-46c6-a628-c2577c13a88b)
+![picture2](https://github.com/hyfffffff/SmartHug/assets/108557638/2f67fa45-49f1-459e-8b54-7872d1141abd)
 
 ### Features and Interactions
 

@@ -1,0 +1,15 @@
+pathlib
+pandas
+frontend
+tools
+PyMuPDF
+openai
+transformers
+sentence_transformers
+gradio
+gradio_pdf
+erniebot
+zhipuai
+tiktoken
+pymilvus
+python-dotenv

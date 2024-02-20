@@ -157,7 +157,7 @@ def uploadpdf():
                 document = gr.Files(height=30, file_count="multiple", file_types=["PDF"], type="filepath", interactive=True, label="上传PDF文件 Upload PDF documents (single or multiple)")
                 # document = PDF(label="上传PDF文件 Upload PDF documents (single or multiple)", scale=10)
                 # upload_btn = gr.UploadButton("Loading document...", height=100, file_count="multiple", file_types=["pdf"], scale=1)
-            with gr.Accordion("Advanced options - Document text splitter", open=False):
+            with gr.Accordion("Advanced options - Document text splitor", open=False):
                 with gr.Row():
                     slider_chunk_size = gr.Slider(minimum = 100, maximum = 1000, value=chunk_length, step=20, label="Chunk size", info="Chunk size", interactive=True)
                 with gr.Row():

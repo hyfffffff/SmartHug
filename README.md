@@ -12,7 +12,7 @@ This project is a precursor to a comprehensive internal enterprise knowledge bas
 
 These objectives are designed to forge a scalable, adaptable, and high-quality knowledge management system, focusing on a robust selection process for models and ensuring the system's long-term viability through continuous innovation and improvement.
 
-SmartHug offers a framework for building an enterprise knowledge base, streamlining the integration of encoding and language models with a universal interface. It simplifies model evaluation, starting with tests on six notable models, including chatGPT and 文心一言, suitable for both online and local use.
+SmartHug offers a framework for building an enterprise knowledge base, streamlining the integration of encoding and language models with a universal interface. It simplifies model evaluation, starting with tests on six notable models, including ChatGpt and 文心一言, suitable for both online and local use.
 
 The system features advanced article segmentation, allowing users to customize chunk sizes and overlaps for ideal data management and retrieval from large datasets.
 

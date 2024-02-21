@@ -1,21 +1,30 @@
-# Introduction
+# SmartHug
 
-This project acts as a foundational step towards a larger-scale knowledge base initiative, with a dual focus:
+This project is a precursor to a comprehensive internal enterprise knowledge base, outlined by four key objectives to construct an efficient knowledge management system:
 
-1. **Model Selection**: The primary aim is to scout for the most fitting vector encoding models and expansive language models that can adeptly handle question answering. This search is pivotal for laying the groundwork of an extensive knowledge base project.
-2. **Article Segmentation Testing**: A key objective is to explore and fine-tune article segmentation strategies. This ensures that the system can efficiently process and retrieve information from vast text datasets.
+1. **Systematic Model Selection**: Developing a system for evaluating and selecting the most optimal vector encoding and language models for question answering. This system not only facilitates the assessment and selection of the best models for immediate use but also ensures the future adaptability of the system to incorporate newly emerging superior models.
 
-To facilitate these goals, the project has established a generic model interface. This interface standardizes the integration of diverse encoding and language models, making them readily testable within this framework. Initial tests have already been conducted on six popular models, including GPT, which range from online services to those deployable on local servers.
+2. **Article Segmentation Testing**: Optimizing the segmentation of articles to achieve efficient information processing and retrieval from vast text datasets, a critical factor for the knowledge base's effectiveness.
 
-For the article segmentation aspect, the application provides users with the flexibility to experiment with various chunk lengths and overlaps. This feature is instrumental in identifying the optimal segmentation strategy, ensuring that the system can effectively manage and query large volumes of text. By enabling such customization, the project aids in refining the approach to text processing, which is crucial for the successful implementation of a knowledge base.
+3. **Vector Database Evaluation**: Conducting thorough evaluations of vector databases' performance and scalability to confirm the infrastructure's capability to manage the extensive data integral to the knowledge base.
 
-Moving forward, the application's design allows for the straightforward integration and testing of additional models via the predefined interface. This capability encourages users to explore a broader array of models, assessing their performance and suitability for specific tasks within the knowledge base framework. This iterative testing and evaluation process is vital for selecting the most appropriate models that can contribute to the development of a scalable and efficient knowledge base system.
+4. **Prototype Development**: Creating a working prototype to showcase the project's potential, stimulate stakeholder discussions, solicit feedback, and foster ongoing enhancements.
 
-# Installation
+These objectives are designed to forge a scalable, adaptable, and high-quality knowledge management system, focusing on a robust selection process for models and ensuring the system's long-term viability through continuous innovation and improvement.
+
+SmartHug offers a framework for building an enterprise knowledge base, streamlining the integration of encoding and language models with a universal interface. It simplifies model evaluation, starting with tests on six notable models, including chatGPT and 文心一言, suitable for both online and local use.
+
+The system features advanced article segmentation, allowing users to customize chunk sizes and overlaps for ideal data management and retrieval from large datasets.
+
+SmartHug also lets users test the Milvus vector database's performance by uploading many documents and conducting vector searches.
+
+With Gradio technology, SmartHug brings these functions into an easy-to-use prototype, providing a platform for user feedback and ongoing updates. This approach highlights the system's efficiency in handling complex data and its potential to improve organizational knowledge management, focusing on adaptability and efficiency.
+
+Moreover, SmartHug's design encourages the exploration and testing of new models through a clear interface, aiding in the discovery of models that best suit the knowledge base's needs. This process is key to developing a scalable and efficient knowledge base system.# Installation
 
 Follow these steps to set up the project environment and dependencies on your system:
 
-### 1. Configure Python Environment
+## 1. Configure Python Environment
 
 First, ensure you have Conda installed on your system. If not, download and install it from the [official Conda website](https://www.conda.io/projects/conda/en/latest/user-guide/install/index.html). Once Conda is installed, create a new Python 3.10 environment:
 
@@ -24,7 +33,7 @@ conda create --name smarthug python=3.10
 conda activate smarthug
 ```
 
-### 2. Clone the Project Repository
+## 2. Clone the Project Repository
 
 Clone the project repository from GitHub to your local machine. Open a terminal and run:
 
@@ -34,7 +43,7 @@ git clone https://github.com/hyfffffff/SmartHug/SmartHug.git
 
 Make sure to replace `<your-username>` and `<project-name>` with the appropriate GitHub username and the name of the project repository.
 
-### 3. Install PyTorch with CUDA
+## 3. Install PyTorch with CUDA
 
 Install PyTorch with CUDA 11.8 support. This step is crucial for leveraging GPU acceleration (if available) for model computations. Run the following command:
 
@@ -44,7 +53,7 @@ conda install pytorch torchvision torchaudio cudatoolkit=11.8 -c pytorch
 
 This command installs PyTorch along with torchvision and torchaudio for multimedia processing, all compatible with CUDA 11.8.
 
-### 4. Install Project Dependencies
+## 4. Install Project Dependencies
 
 Navigate to your project directory and install the remaining Python dependencies using pip:
 
@@ -52,7 +61,7 @@ Navigate to your project directory and install the remaining Python dependencies
 pip install -r requirements.txt
 ```
 
-### 5. Install Milvus Server
+## 5. Install Milvus Server
 
 The project utilizes Milvus, a highly scalable vector database, for managing and querying vectorized text data. Follow the [official Milvus installation guide](https://milvus.io/docs/v2.0.x/install_standalone-docker.md) to set up Milvus on your system. The guide provides detailed instructions for Docker-based and standalone installations.
 
@@ -60,7 +69,7 @@ After completing these steps, your environment should be ready for running and t
 
 Please ensure your system meets all hardware and software prerequisites for the above installations, especially the requirements for running Milvus and CUDA-enabled PyTorch.
 
-# Configuration
+## 6 Configuration
 
 To configure the environment for the project, you will need to set up a `.env` file that stores all the necessary environment variables, including API keys and model configurations. Follow the steps below to properly set up your environment:
 
@@ -81,9 +90,10 @@ OPENAI_API_KEY="YOUR_OPENAI_API_KEY"
 ```
 
 To obtain these keys:
-- For `glmapi_key`, apply at https://open.bigmodel.cn/usercenter/apikeys.
-- For `erniebot.access_token`, visit https://aistudio.baidu.com/index/accessToken.
-- For `OPENAI_API_KEY`, register and obtain a key from https://openai.com/.
+
+- For `glmapi_key`, apply at <https://open.bigmodel.cn/usercenter/apikeys>.
+- For `erniebot.access_token`, visit <https://aistudio.baidu.com/index/accessToken>.
+- For `OPENAI_API_KEY`, register and obtain a key from <https://openai.com/>.
 
 ### 3. Network Configuration
 
@@ -120,7 +130,7 @@ After adding all the necessary configurations to the `.env` file, save and close
 
 Make sure not to share your `.env` file or disclose its contents, as it contains sensitive API keys and configurations.
 
-# Running the Application
+## Running the Application
 
 After setting up your environment and configuring the `.env` file, you can run the application with its Gradio interface to interact with the models in a user-friendly way.
 
@@ -155,4 +165,3 @@ The Gradio interface is divided into two main tabs for ease of use:
 ### Stopping the Application
 
 To stop the application and the Gradio web server, press `Ctrl + C` in the terminal.
-
